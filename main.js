@@ -62,7 +62,7 @@ imageSubmitForm.addEventListener("submit", function (e) {
           const pred_class = data.output.pred_class;
           updateaUI(data);
           getSolutionViaChatGpt(pred_class);
-          hideLoader();
+          // hideLoader();
         })
         .catch((err) => {
           console.log(err);
