@@ -129,7 +129,7 @@ function updateaUI(data) {
 }
 
 function getSolutionViaChatGpt(desies) {
-  const apiKey = "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";
+  const apiKey = "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";
   const endpoint = "https://api.openai.com/v1/chat/completions";
 
   // User input
