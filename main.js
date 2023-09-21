@@ -129,7 +129,6 @@ function updateaUI(data) {
 }
 
 function getSolutionViaChatGpt(desies) {
-  const apiKey = "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";
   const endpoint = "https://api.openai.com/v1/chat/completions";
 
   // User input
@@ -140,7 +139,7 @@ function getSolutionViaChatGpt(desies) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${apiKey}`,
+      Authorization: `Bearer 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`,
     },
     body: JSON.stringify({
       messages: [
