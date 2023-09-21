@@ -19,6 +19,8 @@ const loader = document.querySelector("#loader");
 
 // showLoader();
 
+
+
 // first handle the submit event
 imageSubmitForm.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -129,6 +131,7 @@ function updateaUI(data) {
 }
 
 function getSolutionViaChatGpt(desies) {
+  const apiKey = window.API_KEY;
   const endpoint = "https://api.openai.com/v1/chat/completions";
 
   // User input
@@ -139,7 +142,7 @@ function getSolutionViaChatGpt(desies) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer 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`,
+      Authorization: `Bearer ${apiKey}`,
     },
     body: JSON.stringify({
       messages: [
